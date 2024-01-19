@@ -19,30 +19,37 @@ body {
 }
 .caixa-principal {
     width: 40%;
+    
+    
 }
   
 
 h2 {
         color: whitesmoke;
-        
+        padding-left: 30px;
         
 }
     
 p {
         color: white;
-        margin-top: 20px;
+        margin-top: 30px;
         font-size: 20px;
-        opacity: 0.5;
+        opacity: 0.6;
+        padding-left: 40px;
 }
 button {
-        height: 40px;
+        margin-left: 30%;
+        height: 60px;
         width: 40%;
         background: rgb(160, 3, 3);
         border: none;
-        border-radius: 25px;
+        border-radius: 40px;
         color: floralwhite ;
         margin-top: 20px;
         cursor: pointer; 
+        font-size: 20px;
+    
+        
 }
        
 .video-mario {
