@@ -1,72 +1,41 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Anek Gurmukhi", sans-serif;
 }
+
 body {
-    display: flex;
     height: 100vh;
+}
+
+.box-master {
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    }
-
-.logo-mario {
-    height: 300px;
- }
- .mario-luigi {
-    height: 550px;
+    justify-content: space-between;
+    padding: 100px;
+    height: 100vh;
 }
-.caixa-principal {
+
+.logo {
+    width: 200px;
+}
+
+.mario-luigi {
+    height: 600px;
+}
+
+.box-main {
     width: 40%;
-    
-    
 }
-  
 
-h2 {
-        color: whitesmoke;
-        padding-left: 30px;
-        
-}
-    
-p {
-        color: white;
-        margin-top: 30px;
-        font-size: 20px;
-        opacity: 0.6;
-        padding-left: 40px;
-}
-button {
-        margin-left: 30%;
-        height: 60px;
-        width: 40%;
-        background: rgb(160, 3, 3);
-        border: none;
-        border-radius: 40px;
-        color: floralwhite ;
-        margin-top: 20px;
-        cursor: pointer; 
-        font-size: 20px;
-    
-        
-}
-       
-.video-mario {
+.box-video {
     position: fixed;
     top: 0;
     z-index: -1;
-    height: 100%;
-    width: 100%;
-    }
+}
 
-video {
-position: fixed;
-top: 0;
-min-height: 100%;
-min-width: 100%;
-   }
-.mascara {
+.mascara-video {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -74,10 +43,161 @@ min-width: 100%;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
 
-button:active {
-    color: black; 
-}
-button:hover {
-    color: black;
+video {
+    position: fixed;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
 }
 
+p {
+    color: white;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+
+button {
+    height: 40px;
+    width: 200px;
+    background: #C51111;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover {
+    color: whitesmoke;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.lick-wpp img {
+    height: 75px;
+    position: fixed;
+    right: 35px;
+    bottom: 48px;
+}
+
+.lick-wpp img:hover {
+    height: 90px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.header img {
+    height: 70px;
+}
+
+.header {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.header a:hover {
+    color: #C51111;
+    font-size: 25px;
+    transition: 0.5s ease-in-out;
+}
+
+.fale-conosco {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    padding: 20px;
+    border-radius: 5px;
+    left: -290px;
+    top: 30%;
+    z-index: 4;
+    transition: left 1s ease-in-out;
+}
+
+.fale-conosco button {
+    height: 40px;
+    width: 200px;
+    background: #C51111;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input {
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    outline-color: gray;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    outline-color: #C51111;
+}
+
+.mascara-form {
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: left 1s ease-in-out;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+@media (max-width:1100pX) {
+    .box-main {
+        width: 64%;
+    }
+
+    .box-master {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .box-main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mario-luigi {
+        width: 80vw;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .lick-wpp img {
+        height: 60px;
+        bottom: 30px;
+        right: 10px;
+    }
+
+    button {
+        margin-top: 26px;
+    }
+
+    .logo {
+        margin-top: -10px;
+    }
+}
